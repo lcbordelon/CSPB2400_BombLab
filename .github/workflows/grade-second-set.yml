@@ -1,0 +1,8 @@
+name: grade-second-set
+on: [push]
+jobs:
+  run-second-set:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v2
+      - run: make grade-rest
